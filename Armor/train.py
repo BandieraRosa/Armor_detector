@@ -22,7 +22,6 @@ def train(net, train_iter, test_iter, num_epochs, lr, save=False, save_path="./d
     save_path: 模型保存路径，默认为"./digit.pth"
 
     """
-    # 定义优化器，使用随机梯度下降（SGD）
     optimizer = torch.optim.SGD(net.parameters(), lr=lr)
     loss = nn.CrossEntropyLoss()
     animator = d2l.Animator(xlabel='epoch', xlim=[1, num_epochs], legend=['train loss', 'train acc', 'test acc'])
