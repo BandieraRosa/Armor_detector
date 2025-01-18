@@ -135,6 +135,6 @@ if __name__ == "__main__":
 
     classes = train_dataset.classes
     print("类别标签:", classes)
-
+    
     train(net, train_loader, valid_loader, epochs, lr, save=True)
     output.export(net, r'./digit.pth', input_shape=(1, 1, 20, 20), onnxfile=r'./digit.onnx', local='cpu')
