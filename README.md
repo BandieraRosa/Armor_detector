@@ -20,5 +20,5 @@ Armor文件包含：
 
 ​	train.py：训练模型，含可选的测试函数
 
-​	output.py：导出模型为onnx
+​	output.py：导出模型为onnx /*注意导出路径与recognize读取路径是否一致。
 
