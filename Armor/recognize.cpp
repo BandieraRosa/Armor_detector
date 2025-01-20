@@ -14,7 +14,7 @@ enum EnermyColor{
 };
 EnermyColor energyColor = RED;
 
-char RoboType[6][5] = {"0", "1", "2", "3", "4", "SB"}; // 1-4号、哨兵，0用于占位。
+char RoboType[5][5] = {"1", "2", "3", "4", "SB"}; // 1-4号、哨兵。
 string dataDir = "./dataset/", dataId = "1"; // 定义数据集目录和采集数据时指定的装甲板编号
 bool getdata = false;
 Net net = readNetFromONNX("./digit.onnx"); // 加载onnx模型
